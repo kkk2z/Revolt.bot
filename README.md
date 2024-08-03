@@ -1,0 +1,2 @@
+# Revolt.bot
+ガチのRevolt　Bot
