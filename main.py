@@ -29,7 +29,5 @@ async def main():
         await client.start()
 # uoooo
 keep_alive()#keepしてる。
-os.system("kill")#ipアドレスをリセット
 port = 5001 #ポート指定
-keep()
 asyncio.run(main())
