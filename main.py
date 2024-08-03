@@ -1,6 +1,7 @@
 import asyncio
 import aiohttp
 import revolt
+import keep
 from keep import keep_alive
 print(f'ログインしました')
 #ここからメッセ送信
@@ -30,4 +31,5 @@ async def main():
 keep_alive()#keepしてる。
 os.system("kill")#ipアドレスをリセット
 port = 5001 #ポート指定
+keep()
 asyncio.run(main())
