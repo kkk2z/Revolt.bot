@@ -1,7 +1,7 @@
 import asyncio
 import aiohttp
 import revolt
-
+print(f'ログインしました')
 #ここからメッセ送信
 class Client(revolt.Client):
     async def on_message(self, message: revolt.Message):
@@ -25,5 +25,6 @@ async def main():
     async with aiohttp.ClientSession() as session:
         client = Client(session, "buNggYj1QbqhV0AU0y_flwes62oUPyuRHcdl-b2Jd8q3lwkJpFT268kDooa8RfvJ")
         await client.start()
-
+# uoooo
+port = 5001
 asyncio.run(main())
