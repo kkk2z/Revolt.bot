@@ -12,6 +12,14 @@ class Client(revolt.Client):
     async def on_message(self, message: revolt.Message):
         if message.content == "おはよう":
             await message.channel.send("おはようさん")
+class Client(revolt.Client):
+    async def on_message(self, message: revolt.Message):
+        if message.content == "過疎":
+            await message.channel.send("俺は、24時間労働でいるけどな!")
+class Client(revolt.Client):
+    async def on_message(self, message: revolt.Message):
+        if message.content == "kaso":
+            await message.channel.send("俺は、24時間労働でいるけどな!")
 
 async def main():
     async with aiohttp.ClientSession() as session:
